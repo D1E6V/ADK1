@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant Hub - Google ADK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Google ADK will be loaded conditionally in script.js -->
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <span class="material-icons logo">smart_toy</span>
+            <h1>AI Assistant Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Documentation</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Powerful AI Assistants for Every Task</h2>
+                <p>Leverage the power of Google's ADK framework with specialized AI agents designed to help you work smarter, not harder.</p>
+                <button class="cta-button">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <div class="hero-illustration">
+                    <div class="illustration-circle"></div>
+                    <div class="illustration-node node-1"><span class="material-icons">schedule</span></div>
+                    <div class="illustration-node node-2"><span class="material-icons">brush</span></div>
+                    <div class="illustration-node node-3"><span class="material-icons">search</span></div>
+                    <div class="illustration-node node-4"><span class="material-icons">code</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="agent-categories">
+            <h2>Choose Your AI Assistant</h2>
+            <div class="category-tabs">
+                <button class="tab-button active" data-category="productivity">Productivity</button>
+                <button class="tab-button" data-category="creative">Creative</button>
+                <button class="tab-button" data-category="research">Research</button>
+                <button class="tab-button" data-category="development">Development</button>
+            </div>
+
+            <div class="agents-container" id="agents-grid">
+                <!-- Agents will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <section class="workspace" id="workspace">
+            <div class="workspace-header">
+                <h3 id="active-agent-name">Select an AI Assistant</h3>
+                <button id="close-workspace" class="icon-button">×</button>
+            </div>
+            <div class="chat-container">
+                <div class="chat-messages" id="chat-messages">
+                    <!-- Messages will appear here -->
+                </div>
+                <div class="chat-input-container">
+                    <textarea id="user-input" placeholder="Type your message here..."></textarea>
+                    <button id="send-message" class="send-button">Send</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>AI Assistant Hub</h4>
+                <p>Powered by Google ADK Framework</p>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 AI Assistant Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
